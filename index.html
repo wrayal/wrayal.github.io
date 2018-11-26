@@ -1,6 +1,31 @@
-<!doctype html> <html> <head> <meta charset="utf-8"> <title>Dr. Alexander Wray</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.css"> <link rel="stylesheet" href="styles/main.css"> <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">--> </head> <body ng-app="newAngularApp" ng-controller="IndexCtrl as indexCtrl"> <!--[if lte IE 8]>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dr. Alexander Wray</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/html5up.css">
+    <!-- endbuild -->
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+  </head>
+  <body ng-app="newAngularApp" ng-controller="IndexCtrl as indexCtrl">
+    <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <!-- Add your site or application content here --> <!--
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!--
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -42,10 +67,95 @@
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team test</p>
       </div>
     </div>
-    --> <!-- Header --> <header id="header"> <div class="inner"> <a class="image avatar" href="" ui-sref="home"><img src="images/avatar.jpg" alt=""></a> <h1><strong>Dr. Alexander Wray</strong></h1> <h1>Fluid Dynamics researcher</h1> <h1>Lecturer at <a href="https://www.strath.ac.uk/">University of Strathclyde</a>.</h1> <p> <h1 class="sideContainer"> <div class="sideLinks"> <a href="" ui-sref="research" ng-class="indexCtrl.name=='research'?'activeLink':''">Research</a> </div> <div class="sideLinks"> <a href="" ui-sref="publications" ng-class="indexCtrl.name=='publications'?'activeLink':''">Publications</a> </div> <div class="sideLinks"> <a href="" ui-sref="teaching" ng-class="indexCtrl.name=='teaching'?'activeLink':''">Teaching</a> </div> </h1> </div> </header> <!-- Main --> <div id="main" class="mainViewContainer" ui-view> </div> <!-- Footer --> <footer id="footer"> <div class="inner"> <ul class="icons"> <li><a href="https://twitter.com/alexwwray" class="icon fa-twitter"><span class="label">Twitter</span></a></li> <li><a href="https://github.com/wrayal/" class="icon fa-github"><span class="label">Github</span></a></li> <li><a href="mailto:alexander.wray@strath.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li> </ul> <ul class="copyright"> <li>&copy; Alex Wray</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> </ul> </div> </footer> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+    -->
+
+    <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a class="image avatar" href="" ui-sref="home"><img src="images/avatar.jpg" alt="" /></a>
+          <h1><strong>Dr. Alexander Wray</strong></h1>
+          <h1>Fluid Dynamics researcher</h1>
+          <h1>Lecturer at <a href="https://www.strath.ac.uk/">University of Strathclyde</a>.</h1> <p />
+
+          <h1 class="sideContainer">
+            <div class="sideLinks">
+              <a href="" ui-sref="research" ng-class="indexCtrl.name=='research'?'activeLink':''">Research</a>
+            </div>
+            <div class="sideLinks">
+              <a href="" ui-sref="publications" ng-class="indexCtrl.name=='publications'?'activeLink':''">Publications</a>
+            </div>
+            <div class="sideLinks">
+              <a href="" ui-sref="teaching" ng-class="indexCtrl.name=='teaching'?'activeLink':''">Teaching</a>
+            </div>
+          </h1>
+
+        </div>
+      </header>
+
+
+
+    <!-- Main -->
+      <div id="main" class="mainViewContainer"
+           ui-view>
+
+        
+
+      </div>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="icons">
+            <li><a href="https://twitter.com/alexwwray" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/wrayal/" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="mailto:alexander.wray@strath.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; Alex Wray</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');</script> <script src="scripts/vendor.js"></script> <script src="scripts/scripts.js"></script> </body> </html>
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/libraries/angular-ui-router.min.js"></script>
+
+        <script src="research/research.controller.js"></script>
+        <script src="teaching/teaching.controller.js"></script>
+        <script src="publications/publications.controller.js"></script>
+        <script src="publications/publications.service.js"></script>
+        <script src="index.controller.js"></script>
+
+        <script src="scripts/5upScripts/breakpoints.min.js"></script>
+        <script src="scripts/5upScripts/browser.min.js"></script>
+        <script src="scripts/5upScripts/main.js"></script>
+        <script src="scripts/5upScripts/jquery.poptrox.min.js"></script>
+        <script src="scripts/5upScripts/util.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
